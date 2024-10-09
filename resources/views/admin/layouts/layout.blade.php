@@ -78,6 +78,23 @@
                                     Sub Category</span>
                             </a>
                         </li>
+                        <li class="sidebar-header">
+                            Product Attribute
+                        </li>
+
+                        <li class="sidebar-item {{ request()->routeIs('productattribute.create') ? 'active' : '' }}">
+                            <a class="sidebar-link" href="{{ route('productattribute.create') }}">
+                                <i class="align-middle" data-feather="plus"></i> <span class="align-middle">Create
+                                    Attribute</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item {{ request()->routeIs('productattribute.manage') ? 'active' : '' }}">
+                            <a class="sidebar-link" href="{{ route('productattribute.manage') }}">
+                                <i class="align-middle" data-feather="list"></i> <span class="align-middle">Manage
+                                    Attribute</span>
+                            </a>
+                        </li>
 
                         <li class="sidebar-header">
                             Product
@@ -94,25 +111,6 @@
                             <a class="sidebar-link" href="{{ route('product.review.manage') }}">
                                 <i class="align-middle" data-feather="star"></i> <span class="align-middle">Manage
                                     Review</span>
-                            </a>
-                        </li>
-
-
-                        <li class="sidebar-header">
-                            Product Attribute
-                        </li>
-
-                        <li class="sidebar-item {{ request()->routeIs('productattribute.create') ? 'active' : '' }}">
-                            <a class="sidebar-link" href="{{ route('productattribute.create') }}">
-                                <i class="align-middle" data-feather="plus"></i> <span class="align-middle">Create
-                                    Attribute</span>
-                            </a>
-                        </li>
-
-                        <li class="sidebar-item {{ request()->routeIs('productattribute.manage') ? 'active' : '' }}">
-                            <a class="sidebar-link" href="{{ route('productattribute.manage') }}">
-                                <i class="align-middle" data-feather="list"></i> <span class="align-middle">Manage
-                                    Attribute</span>
                             </a>
                         </li>
 
