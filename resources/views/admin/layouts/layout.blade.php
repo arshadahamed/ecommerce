@@ -17,7 +17,8 @@
 
     <title>@yield('admin_page_title')</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="{{ asset('admin_asset/css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -102,7 +103,8 @@
 
                         <li class="sidebar-item {{ request()->routeIs('product.manage') ? 'active' : '' }}">
                             <a class="sidebar-link" href="{{ route('product.manage') }}">
-                                <i class="align-middle" data-feather="shopping-bag"></i> <span class="align-middle">Manage
+                                <i class="align-middle" data-feather="shopping-bag"></i> <span
+                                    class="align-middle">Manage
                                     Product</span>
                             </a>
                         </li>
@@ -127,7 +129,8 @@
 
                         <li class="sidebar-item {{ request()->routeIs('discount.manage') ? 'active' : '' }}">
                             <a class="sidebar-link" href="{{ route('discount.manage') }}">
-                                <i class="align-middle" data-feather="dollar-sign"></i> <span class="align-middle">Manage
+                                <i class="align-middle" data-feather="dollar-sign"></i> <span
+                                    class="align-middle">Manage
                                     Discount</span>
                             </a>
                         </li>
@@ -138,7 +141,8 @@
 
                         <li class="sidebar-item {{ request()->routeIs('admin.cart.history') ? 'active' : '' }}">
                             <a class="sidebar-link" href="{{ route('admin.cart.history') }}">
-                                <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Cart
+                                <i class="align-middle" data-feather="shopping-cart"></i> <span
+                                    class="align-middle">Cart
                                     History</span>
                             </a>
                         </li>
@@ -163,7 +167,7 @@
                         </li>
 
                     </ul>
-{{--
+                    {{--
                     <div class="sidebar-cta">
                         <div class="sidebar-cta-content">
                             <strong class="d-inline-block mb-2">Upgrade to Pro</strong>
@@ -355,10 +359,9 @@
                                         data-feather="settings"></i> Settings & Privacy</a>
                                 <a class="dropdown-item" href="#"><i class="align-middle me-1"
                                         data-feather="help-circle"></i> Help Center</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
-           document.getElementById('logout-form').submit();">
+                                    document.getElementById('logout-form').submit();">
                                     Log out
                                 </a>
 
@@ -384,21 +387,24 @@
                     <div class="row text-muted">
                         <div class="col-6 text-start">
                             <p class="mb-0">
-                                <a class="text-muted" href="https://arshadahamed.com/"
-                                    target="_blank"><strong>Arshad Ahamed</strong></a> - <a class="text-muted"
-                                    href="https://adminkit.io/" target="_blank"><strong>2024</strong></a> &copy;
+                                <a class="text-muted" href="https://arshadahamed.com/" target="_blank"><strong>Arshad
+                                        Ahamed</strong></a> - <a class="text-muted" href="https://adminkit.io/"
+                                    target="_blank"><strong>2024</strong></a> &copy;
                             </p>
                         </div>
                         <div class="col-6 text-end">
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a class="text-muted" href="https://arshadahamed.com/" target="_blank">Support</a>
+                                    <a class="text-muted" href="https://arshadahamed.com/"
+                                        target="_blank">Support</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="text-muted" href="https://arshadahamed.com/" target="_blank">Help Center</a>
+                                    <a class="text-muted" href="https://arshadahamed.com/" target="_blank">Help
+                                        Center</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a class="text-muted" href="https://arshadahamed.com/" target="_blank">Privacy</a>
+                                    <a class="text-muted" href="https://arshadahamed.com/"
+                                        target="_blank">Privacy</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a class="text-muted" href="https://arshadahamed.com/" target="_blank">Terms</a>
@@ -412,7 +418,9 @@
     </div>
 
     <script src="{{ asset('admin_asset/js/app.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 
 </body>
 
